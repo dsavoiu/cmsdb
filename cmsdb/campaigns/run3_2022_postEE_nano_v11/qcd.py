@@ -14,17 +14,17 @@ from cmsdb.campaigns.run3_2022_postEE_nano_v11 import campaign_run3_2022_postEE_
 
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-15*Flat2018&chained_request=Premix  # noqa
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_flat2018_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_flat],
-#     keys=[
-#         "/QCD_PT-15_TuneCP5_Flat2018_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v2/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="qcd_flat2018_pythia",
+    id=99999911,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_flat],
+    keys=[
+        "/QCD_PT-15_TuneCP5_Flat2018_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v2/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-15*Flat2018&chained_request=EpsilonPU  # noqa
 cpn.add_dataset(
@@ -54,30 +54,30 @@ cpn.add_dataset(
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-*%28to*%29%3F0_TuneCP5&chained_request=Premix  # noqa
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_pt15to30_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_pt15to30],
-#     keys=[
-#         "/QCD_PT-15to30_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=2,
-#     n_events=1149000,
-# )
+cpn.add_dataset(
+    name="qcd_pt15to30_pythia",
+    id=99999912,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_pt15to30],
+    keys=[
+        "/QCD_PT-15to30_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,  #2,
+    n_events=0,  #1149000,
+)
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_pt30to50_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_pt30to50],
-#     keys=[
-#         "/QCD_PT-30to50_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=2,
-#     n_events=1189766,
-# )
+cpn.add_dataset(
+    name="qcd_pt30to50_pythia",
+    id=99999913,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_pt30to50],
+    keys=[
+        "/QCD_PT-30to50_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,  #2,
+    n_events=0,  #1189766,
+)
 
 cpn.add_dataset(
     name="qcd_pt50to80_pythia",
@@ -255,17 +255,17 @@ cpn.add_dataset(
 )
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_mu_pt20to30_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_mu_pt20to30],
-#     keys=[
-#         "/QCD_PT-20to30_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="qcd_mu_pt20to30_pythia",
+    id=99999914,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_mu_pt20to30],
+    keys=[
+        "/QCD_PT-20to30_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 cpn.add_dataset(
     name="qcd_mu_pt30to50_pythia",
@@ -364,17 +364,17 @@ cpn.add_dataset(
 )
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_mu_pt800to1000_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_mu_pt800to1000],
-#     keys=[
-#         "/QCD_PT-800to1000_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="qcd_mu_pt800to1000_pythia",
+    id=99999915,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_mu_pt800to1000],
+    keys=[
+        "/QCD_PT-800to1000_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 cpn.add_dataset(
     name="qcd_mu_pt1000_pythia",

@@ -264,17 +264,17 @@ cpn.add_dataset(
 )
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_mu_pt30to50_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_mu_pt30to50],
-#     keys=[
-#         "/QCD_PT-30to50_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="qcd_mu_pt30to50_pythia",
+    id=99999901,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_mu_pt30to50],
+    keys=[
+        "/QCD_PT-30to50_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 cpn.add_dataset(
     name="qcd_mu_pt50to80_pythia",
@@ -325,17 +325,17 @@ cpn.add_dataset(
 )
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="qcd_mu_pt300to470_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.qcd_mu_pt300to470],
-#     keys=[
-#         "/QCD_PT-300to470_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="qcd_mu_pt300to470_pythia",
+    id=99999902,  # TODO: update
+    is_data=False,
+    processes=[procs.qcd_mu_pt300to470],
+    keys=[
+        "/QCD_PT-300to470_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 cpn.add_dataset(
     name="qcd_mu_pt470to600_pythia",

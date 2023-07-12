@@ -93,17 +93,17 @@ cpn.add_dataset(
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&short_name=VV  # noqa
 
 # missing as of 2023-07-01
-# cpn.add_dataset(
-#     name="zz_pythia",
-#     id=None,
-#     is_data=False,
-#     processes=[procs.zz],
-#     keys=[
-#         "/ZZ_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
-#     ],
-#     n_files=None,
-#     n_events=None,
-# )
+cpn.add_dataset(
+    name="zz_pythia",
+    id=99999910,  # TODO: update
+    is_data=False,
+    processes=[procs.zz],
+    keys=[
+        "/ZZ_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=0,
+    n_events=0,
+)
 
 cpn.add_dataset(
     name="wz_pythia",
