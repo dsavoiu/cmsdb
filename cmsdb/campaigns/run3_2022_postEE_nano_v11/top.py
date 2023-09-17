@@ -70,6 +70,13 @@ cpn.add_dataset(
             n_files=89,
             n_events=108182255,
         ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TTtoLNu2Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=92,
+            n_events=109202339,
+        ),
         mtop_up=DatasetInfo(
             keys=[
                 "/TTtoLNu2Q_MT-173p5_TuneCP5_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
@@ -145,6 +152,13 @@ cpn.add_dataset(
             n_files=31,
             n_events=33847420,
         ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TTto2L2Nu_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=29,
+            n_events=34757447,
+        ),
         mtop_up=DatasetInfo(
             keys=[
                 "/TTto2L2Nu_MT-173p5_TuneCP5_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
@@ -219,6 +233,13 @@ cpn.add_dataset(
             ],
             n_files=68,
             n_events=77216300,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TTto4Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=66,
+            n_events=77031136,
         ),
         mtop_up=DatasetInfo(
             keys=[
@@ -303,29 +324,33 @@ cpn.add_dataset(
             n_files=15,
             n_events=17519371,
         ),
-        # missing as of 2023-07-01
         tune_down=DatasetInfo(
             keys=[
                 "/TWminustoLNu2Q_TuneCP5Down_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=21,
+            n_events=17046305,
         ),
-        # missing as of 2023-07-01
         cr_1=DatasetInfo(
             keys=[
                 "/TWminustoLNu2Q_TuneCP5CR1_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=14,
+            n_events=17072973,
         ),
-        # missing as of 2023-07-01
         cr_2=DatasetInfo(
             keys=[
                 "/TWminustoLNu2Q_TuneCP5CR2_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=14,
+            n_events=16201701,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TWminustoLNu2Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=15,
+            n_events=16089625,
         ),
     ),
 )
@@ -345,13 +370,12 @@ cpn.add_dataset(
             n_files=15,
             n_events=16804298,
         ),
-        # missing as of 2023-07-01
         tune_up=DatasetInfo(
             keys=[
                 "/TbarWplustoLNu2Q_TuneCP5Up_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=15,
+            n_events=17034168,
         ),
         tune_down=DatasetInfo(
             keys=[
@@ -360,21 +384,26 @@ cpn.add_dataset(
             n_files=15,
             n_events=17361554,
         ),
-        # missing as of 2023-07-01
         cr_1=DatasetInfo(
             keys=[
                 "/TbarWplustoLNu2Q_TuneCP5CR1_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=14,
+            n_events=17156189,
         ),
-        # missing as of 2023-07-01
         cr_2=DatasetInfo(
             keys=[
                 "/TbarWplustoLNu2Q_TuneCP5CR2_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=16,
+            n_events=17172120,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TbarWplustoLNu2Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=14,
+            n_events=18078424,
         ),
     ),
 )
@@ -394,37 +423,40 @@ cpn.add_dataset(
             n_files=8,
             n_events=8326616,
         ),
-        # missing as of 2023-07-01
         tune_up=DatasetInfo(
             keys=[
                 "/TWminusto2L2Nu_TuneCP5Up_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=11,
+            n_events=8714250,
         ),
-        # missing as of 2023-07-01
         tune_down=DatasetInfo(
             keys=[
                 "/TWminusto2L2Nu_TuneCP5Down_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=7,
+            n_events=8742245,
         ),
-        # missing as of 2023-07-01
         cr_1=DatasetInfo(
             keys=[
                 "/TWminusto2L2Nu_TuneCP5CR1_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=11,
+            n_events=8657456,
         ),
-        # missing as of 2023-07-01
         cr_2=DatasetInfo(
             keys=[
                 "/TWminusto2L2Nu_TuneCP5CR2_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=9,
+            n_events=8556959,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TWminusto2L2Nu_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=9,
+            n_events=8440724,
         ),
     ),
 )
@@ -444,29 +476,26 @@ cpn.add_dataset(
             n_files=8,
             n_events=8549264,
         ),
-        # missing as of 2023-07-01
         tune_up=DatasetInfo(
             keys=[
                 "/TbarWplusto2L2Nu_TuneCP5Up_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=8,
+            n_events=8641624,
         ),
-        # missing as of 2023-07-01
         tune_down=DatasetInfo(
             keys=[
                 "/TbarWplusto2L2Nu_TuneCP5Down_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=8,
+            n_events=8707239,
         ),
-        # missing as of 2023-07-01
         cr_1=DatasetInfo(
             keys=[
                 "/TbarWplusto2L2Nu_TuneCP5CR1_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=9,
+            n_events=8719126,
         ),
         cr_2=DatasetInfo(
             keys=[
@@ -474,6 +503,13 @@ cpn.add_dataset(
             ],
             n_files=7,
             n_events=8274400,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TbarWplusto2L2Nu_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=8,
+            n_events=8372226,
         ),
     ),
 )
@@ -494,13 +530,12 @@ cpn.add_dataset(
             n_files=11,
             n_events=13480012,
         ),
-        # missing as of 2023-07-01
         tune_up=DatasetInfo(
             keys=[
                 "/TWminusto4Q_TuneCP5Up_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=13,
+            n_events=13955605,
         ),
         tune_down=DatasetInfo(
             keys=[
@@ -523,6 +558,13 @@ cpn.add_dataset(
             n_files=12,
             n_events=13977131,
         ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TWminusto4Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=13,
+            n_events=13371720,
+        ),
     ),
 )
 
@@ -531,38 +573,37 @@ cpn.add_dataset(
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEwmLHEGS&nanoaod_version=v11&dataset=TbarWplusto4Q*_TuneCP5%28%7CUp%7CDown%7CCR1%7CCR2%29_13p6TeV&chained_request=Premix  # noqa
 cpn.add_dataset(
     name="st_twchannel_tbar_fh_powheg",
-    id=99999920,  # TODO: update
+    id=14727705,
     is_data=False,
     processes=[procs.st_twchannel_tbar_fh],
     info=dict(
-        # missing as of 2023-07-01
         nominal=DatasetInfo(
             keys=[
                 "/TbarWplusto4Q_TuneCP5_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=14,
+            n_events=13388295,
         ),
         tune_up=DatasetInfo(
             keys=[
                 "/TbarWplusto4Q_TuneCP5Up_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=13,
+            n_events=13974581,
         ),
         tune_down=DatasetInfo(
             keys=[
                 "/TbarWplusto4Q_TuneCP5Down_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=12,
+            n_events=13906840,
         ),
         cr_1=DatasetInfo(
             keys=[
                 "/TbarWplusto4Q_TuneCP5CR1_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
             ],
-            n_files=0,
-            n_events=0,
+            n_files=13,
+            n_events=13968766,
         ),
         cr_2=DatasetInfo(
             keys=[
@@ -570,6 +611,13 @@ cpn.add_dataset(
             ],
             n_files=13,
             n_events=13896218,
+        ),
+        erd_on=DatasetInfo(
+            keys=[
+                "/TbarWplusto4Q_TuneCP5_ERDOn_13p6TeV_powheg-pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+            ],
+            n_files=13,
+            n_events=13960675,
         ),
     ),
 )

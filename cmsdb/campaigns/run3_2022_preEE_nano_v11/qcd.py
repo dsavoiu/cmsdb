@@ -263,7 +263,7 @@ cpn.add_dataset(
     n_events=29845469,
 )
 
-# missing as of 2023-07-01
+# missing as of 2023-09-16
 cpn.add_dataset(
     name="qcd_mu_pt30to50_pythia",
     id=99999901,  # TODO: update
@@ -324,7 +324,7 @@ cpn.add_dataset(
     n_events=36140731,
 )
 
-# missing as of 2023-07-01
+# missing as of 2023-09-16
 cpn.add_dataset(
     name="qcd_mu_pt300to470_pythia",
     id=99999902,  # TODO: update
@@ -387,8 +387,43 @@ cpn.add_dataset(
 
 
 #
-# QCD (Pythia pT-binned, EM-enriched)
+# QCD (Pythia pT-binned, double EM-enriched)
 #
 
-# GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22GS&nanoaod_version=v11&dataset=QCD_PT-*%28to*%29%3F_EMEnriched_TuneCP5&chained_request=Premix  # noqa
-# missing as of 2023-07-01 (only v10 available)
+# GrASP: https://cms-pdmv-prod.web.cern.ch/grasp/samples?campaign=Run3Summer22GS&nanoaod_version=v11&dataset=QCD*EMEnriched&chained_request=Premix  # noqa
+
+cpn.add_dataset(
+    name="qcd_double_em_pt30to40_pythia",
+    id=14649903,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt30to40],
+    keys=[
+        "/QCD_PT-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=2,
+    n_events=1413353,
+)
+
+cpn.add_dataset(
+    name="qcd_double_em_pt30_pythia",
+    id=14641367,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt30],
+    keys=[
+        "/QCD_PT-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=3,
+    n_events=2911485,
+)
+
+cpn.add_dataset(
+    name="qcd_double_em_pt40_pythia",
+    id=14636175,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt40],
+    keys=[
+        "/QCD_PT-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13p6TeV_pythia8/Run3Summer22NanoAODv11-126X_mcRun3_2022_realistic_v2-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=3,
+    n_events=2947774,
+)

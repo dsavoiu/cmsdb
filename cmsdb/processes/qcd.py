@@ -53,6 +53,10 @@ __all__ = [
     "qcd_em_pt120to170",
     "qcd_em_pt170to300",
     "qcd_em_pt300toInf",
+    "qcd_double_em",
+    "qcd_double_em_pt30",
+    "qcd_double_em_pt30to40",
+    "qcd_double_em_pt40",
     "qcd_bctoe",
     "qcd_bctoe_pt15to20",
     "qcd_bctoe_pt20to30",
@@ -537,5 +541,45 @@ qcd_bctoe_pt250toInf = qcd_bctoe.add_process(
     id=31306,
     xsecs={
         13: Number(562.5),
+    },
+)
+
+#
+# QCD pT-binned (double EM enriched)
+#
+
+qcd_double_em = qcd.add_process(
+    name="qcd_double_em",
+    id=31400,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+qcd_double_em_pt30to40 = qcd_double_em.add_process(
+    name="qcd_double_em_pt30to40",
+    id=31401,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+qcd_double_em_pt30 = qcd_double_em.add_process(
+    name="qcd_double_em_pt30",
+    id=31402,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+qcd_double_em_pt40 = qcd_double_em.add_process(
+    name="qcd_double_em_pt40",
+    id=31403,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
     },
 )

@@ -105,3 +105,52 @@ cpn.add_dataset(
         "era": "G",
     },
 )
+
+#
+# JetMET
+#
+
+cpn.add_dataset(
+    name="data_jetmet_e",
+    id=14672781,
+    is_data=True,
+    processes=[procs.data_jetmet],
+    keys=[
+        "/JetMET/Run2022E-ReRecoNanoAODv11-v1/NANOAOD",
+    ],
+    n_files=106,
+    n_events=141226854,
+    aux={
+        "era": "E",
+    },
+)
+
+cpn.add_dataset(
+    name="data_jetmet_f",
+    id=14578617,
+    is_data=True,
+    processes=[procs.data_jetmet],
+    keys=[
+        "/JetMET/Run2022F-PromptNanoAODv11_v1-v2/NANOAOD",
+    ],
+    n_files=391,
+    n_events=515037664,
+    aux={
+        "era": "F",
+    },
+)
+
+cpn.add_dataset(
+    name="data_jetmet_g",
+    id=14577697,
+    is_data=True,
+    processes=[procs.data_jetmet],
+    keys=[
+        "/JetMET/Run2022G-PromptNanoAODv11_v1-v2/NANOAOD",
+    ],
+    n_files=79,
+    n_events=84845725,
+    aux={
+        "era": "G",
+    },
+)

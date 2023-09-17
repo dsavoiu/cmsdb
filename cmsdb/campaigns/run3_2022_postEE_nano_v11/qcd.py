@@ -13,7 +13,7 @@ from cmsdb.campaigns.run3_2022_postEE_nano_v11 import campaign_run3_2022_postEE_
 #
 
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-15*Flat2018&chained_request=Premix  # noqa
-# missing as of 2023-07-01
+# missing as of 2023-09-16
 cpn.add_dataset(
     name="qcd_flat2018_pythia",
     id=99999911,  # TODO: update
@@ -53,7 +53,7 @@ cpn.add_dataset(
 
 # GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-*%28to*%29%3F0_TuneCP5&chained_request=Premix  # noqa
 
-# missing as of 2023-07-01
+# missing as of 2023-09-16
 cpn.add_dataset(
     name="qcd_pt15to30_pythia",
     id=99999912,  # TODO: update
@@ -62,11 +62,11 @@ cpn.add_dataset(
     keys=[
         "/QCD_PT-15to30_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
     ],
-    n_files=0,  #2,
-    n_events=0,  #1149000,
+    n_files=0,
+    n_events=0,
 )
 
-# missing as of 2023-07-01
+# missing as of 2023-09-16
 cpn.add_dataset(
     name="qcd_pt30to50_pythia",
     id=99999913,  # TODO: update
@@ -75,8 +75,8 @@ cpn.add_dataset(
     keys=[
         "/QCD_PT-30to50_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
     ],
-    n_files=0,  #2,
-    n_events=0,  #1189766,
+    n_files=0,
+    n_events=0,
 )
 
 cpn.add_dataset(
@@ -254,17 +254,16 @@ cpn.add_dataset(
     n_events=16191725,
 )
 
-# missing as of 2023-07-01
 cpn.add_dataset(
     name="qcd_mu_pt20to30_pythia",
-    id=99999914,  # TODO: update
+    id=14735801,
     is_data=False,
     processes=[procs.qcd_mu_pt20to30],
     keys=[
         "/QCD_PT-20to30_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
     ],
-    n_files=0,
-    n_events=0,
+    n_files=54,
+    n_events=96324237,
 )
 
 cpn.add_dataset(
@@ -363,17 +362,16 @@ cpn.add_dataset(
     n_events=73248078,
 )
 
-# missing as of 2023-07-01
 cpn.add_dataset(
     name="qcd_mu_pt800to1000_pythia",
-    id=99999915,  # TODO: update
+    id=14725966,
     is_data=False,
     processes=[procs.qcd_mu_pt800to1000],
     keys=[
         "/QCD_PT-800to1000_MuEnrichedPt5_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
     ],
-    n_files=0,
-    n_events=0,
+    n_files=118,
+    n_events=126463515,
 )
 
 cpn.add_dataset(
@@ -390,8 +388,43 @@ cpn.add_dataset(
 
 
 #
-# QCD (Pythia pT-binned, EM-enriched)
+# QCD (Pythia pT-binned, double EM-enriched)
 #
 
-# GrASP: https://cms-pdmv.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD_PT-*%28to*%29%3F_EMEnriched_TuneCP5&chained_request=Premix  # noqa
-# missing as of 2023-07-01
+# GrASP: https://cms-pdmv-prod.web.cern.ch/grasp/samples?campaign=Run3Summer22EEGS&nanoaod_version=v11&dataset=QCD*EMEnriched&chained_request=Premix  # noqa
+
+cpn.add_dataset(
+    name="qcd_double_em_pt30to40_pythia",
+    id=14647355,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt30to40],
+    keys=[
+        "/QCD_PT-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=5,
+    n_events=4704704,
+)
+
+cpn.add_dataset(
+    name="qcd_double_em_pt30_pythia",
+    id=14645090,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt30],
+    keys=[
+        "/QCD_PT-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=7,
+    n_events=10166375,
+)
+
+cpn.add_dataset(
+    name="qcd_double_em_pt40_pythia",
+    id=14637462,
+    is_data=False,
+    processes=[procs.qcd_double_em_pt40],
+    keys=[
+        "/QCD_PT-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13p6TeV_pythia8/Run3Summer22EENanoAODv11-126X_mcRun3_2022_realistic_postEE_v1-v1/NANOAODSIM",  # noqa
+    ],
+    n_files=8,
+    n_events=10358757,
+)

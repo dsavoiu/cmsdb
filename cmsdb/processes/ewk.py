@@ -14,8 +14,30 @@ __all__ = [
     "dy_lep_m50_ht1200to2500", "dy_lep_m50_ht2500",
     "dy_lep_pt0To50", "dy_lep_pt50To100", "dy_lep_pt100To250", "dy_lep_pt250To400",
     "dy_lep_pt400To650", "dy_lep_pt650",
+    "dy_mm",
+    "dy_mm_m10to50",
+    "dy_mm_m50to120",
+    "dy_mm_m120to200",
+    "dy_mm_m200to400",
+    "dy_mm_m400to800",
+    "dy_mm_m800to1500",
+    "dy_mm_m1500to2500",
+    "dy_mm_m2500to4000",
+    "dy_mm_m4000to6000",
+    "dy_mm_m6000",
+    "dy_ee",
+    "dy_ee_m10to50",
+    "dy_ee_m50to120",
+    "dy_ee_m120to200",
+    "dy_ee_m200to400",
+    "dy_ee_m400to800",
+    "dy_ee_m800to1500",
+    "dy_ee_m1500to2500",
+    "dy_ee_m2500to4000",
+    "dy_ee_m4000to6000",
+    "dy_ee_m6000",
     "w",
-    "w_lnu",
+    "w_lnu", "w_lnu_1j", "w_lnu_2j", "w_lnu_3j", "w_lnu_4j",
     "w_lnu_ht70To100", "w_lnu_ht100To200", "w_lnu_ht200To400", "w_lnu_ht400To600",
     "w_lnu_ht600To800", "w_lnu_ht800To1200", "w_lnu_ht1200To2500", "w_lnu_ht2500",
     "ewk",
@@ -195,6 +217,209 @@ dy_lep_pt650 = dy_lep.add_process(
     xsecs={13: Number(0.04704)},
 )
 
+# DY to muons
+dy_mm = dy_lep.add_process(
+    name="dy_mm",
+    id=52000,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+# DY to muons, mll-binned
+
+dy_mm_m10to50 = dy_mm.add_process(
+    name="dy_mm_m10to50",
+    id=52010,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m50to120 = dy_mm.add_process(
+    name="dy_mm_m50to120",
+    id=52020,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m120to200 = dy_mm.add_process(
+    name="dy_mm_m120to200",
+    id=52030,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m200to400 = dy_mm.add_process(
+    name="dy_mm_m200to400",
+    id=52040,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m400to800 = dy_mm.add_process(
+    name="dy_mm_m400to800",
+    id=52050,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m800to1500 = dy_mm.add_process(
+    name="dy_mm_m800to1500",
+    id=52060,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m1500to2500 = dy_mm.add_process(
+    name="dy_mm_m1500to2500",
+    id=52070,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m2500to4000 = dy_mm.add_process(
+    name="dy_mm_m2500to4000",
+    id=52080,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m4000to6000 = dy_mm.add_process(
+    name="dy_mm_m4000to6000",
+    id=52090,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_mm_m6000 = dy_mm.add_process(
+    name="dy_mm_m6000",
+    id=52100,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+# DY to electrons
+dy_ee = dy_lep.add_process(
+    name="dy_ee",
+    id=53000,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+# DY to electrons, mll-binned
+
+dy_ee_m10to50 = dy_ee.add_process(
+    name="dy_ee_m10to50",
+    id=53010,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m50to120 = dy_ee.add_process(
+    name="dy_ee_m50to120",
+    id=53020,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m120to200 = dy_ee.add_process(
+    name="dy_ee_m120to200",
+    id=53030,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m200to400 = dy_ee.add_process(
+    name="dy_ee_m200to400",
+    id=53040,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m400to800 = dy_ee.add_process(
+    name="dy_ee_m400to800",
+    id=53050,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m800to1500 = dy_ee.add_process(
+    name="dy_ee_m800to1500",
+    id=53060,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m1500to2500 = dy_ee.add_process(
+    name="dy_ee_m1500to2500",
+    id=53070,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m2500to4000 = dy_ee.add_process(
+    name="dy_ee_m2500to4000",
+    id=53080,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m4000to6000 = dy_ee.add_process(
+    name="dy_ee_m4000to6000",
+    id=53090,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+dy_ee_m6000 = dy_ee.add_process(
+    name="dy_ee_m6000",
+    id=53100,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
 
 #
 # W boson
@@ -270,6 +495,44 @@ w_lnu_ht2500 = w_lnu.add_process(
     name="w_lnu_ht2500",
     id=6180,
     xsecs={13: w_lnu.get_xsec(13) * 0.008001 / 53870.0},
+)
+
+# n-jet binned
+
+w_lnu_1j = w_lnu.add_process(
+    name="w_lnu_1j",
+    id=6210,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+w_lnu_2j = w_lnu.add_process(
+    name="w_lnu_2j",
+    id=6220,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+w_lnu_3j = w_lnu.add_process(
+    name="w_lnu_3j",
+    id=6230,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
+)
+
+w_lnu_4j = w_lnu.add_process(
+    name="w_lnu_4j",
+    id=6240,
+    xsecs={
+        13: Number(0.1),  # TODO
+        13.6: Number(0.1),  # TODO
+    },
 )
 
 

@@ -75,3 +75,54 @@ cpn.add_dataset(
         "era": "D",
     },
 )
+
+#
+# JetHT/JetMET
+# note: primary dataset JetHT only available for first part of run C,
+# then changed to JetMET
+#
+
+cpn.add_dataset(
+    name="data_jetht_c",
+    id=14665445,
+    is_data=True,
+    processes=[procs.data_jetht],
+    keys=[
+        "/JetHT/Run2022C-ReRecoNanoAODv11-v1/NANOAOD",
+    ],
+    n_files=17,
+    n_events=15620904,
+    aux={
+        "era": "C",
+    },
+)
+
+cpn.add_dataset(
+    name="data_jetmet_c",
+    id=14668015,
+    is_data=True,
+    processes=[procs.data_jetmet],
+    keys=[
+        "/JetMET/Run2022C-ReRecoNanoAODv11-v1/NANOAOD",
+    ],
+    n_files=126,
+    n_events=169949259,
+    aux={
+        "era": "C",
+    },
+)
+
+cpn.add_dataset(
+    name="data_jetmet_d",
+    id=14665614,
+    is_data=True,
+    processes=[procs.data_jetmet],
+    keys=[
+        "/JetMET/Run2022D-ReRecoNanoAODv11-v1/NANOAOD",
+    ],
+    n_files=78,
+    n_events=101352671,
+    aux={
+        "era": "D",
+    },
+)
